@@ -1,8 +1,95 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@page
+@*@model IndexModel*@
+@*@{
+    ViewData["Title"] = "Home page";
+}*@
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+    <div class="col-lg-6 mt-3">
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">First name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Last name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Select gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="Male" value="male" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="Female" value="male">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="class">Select class</label>
+                <select id="student" class="form-control">
+                    <option selected>Chose...</option>
+                    <option>Class 1</option>
+                    <option>Class 2</option>
+                    <option>Class 3</option>
+                    <option>Class 4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Stay logged in for this device
+                    </label>
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+    </div>
+    <div class="col-lg-8 mt-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Class</th>
+                    <th class="text-center" scope="col">Edit</th>
+                    <th class="text-center" scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>mdo</td>
+                    <td class="text-center"><i class="fas fa-edit"></i></td>
+                    <td class="text-center"><i class="fas fa-trash"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>mdo</td>
+                    <td class="text-center"><i class="fas fa-edit"></i></td>
+                    <td class="text-center"><i class="fas fa-trash"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>mdo</td>
+                    <td class="text-center"><i class="fas fa-edit"></i></td>
+                    <td class="text-center"><i class="fas fa-trash"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
