@@ -50,7 +50,7 @@ namespace Store
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Product}/{action=SingleProduct}/{id?}");
+                    pattern: "{controller=Account}/{action=Checkout}/{id?}");
             });
         }
     }
