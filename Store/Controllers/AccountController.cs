@@ -17,5 +17,25 @@ namespace Store.Controllers
         {
             return View();
         }
+        public IActionResult Wishlist()
+        {
+            return View();
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Register()
+        {
+            return View();
+        }
+        public IActionResult MyAccount()
+        {
+            return View();
+        }
+        public IActionResult ThankYou()
+        {
+            return View();
+        }
     }
 }
